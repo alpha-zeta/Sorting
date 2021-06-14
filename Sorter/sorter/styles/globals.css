@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.bar {
+  display: inline-block;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.arrayCont {
+  transform: rotate(180deg) rotateY(180deg);
+  text-align: unset;
+}
+.Brand {
+  font-family: "Merienda", cursive;
+}
+.disabled:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: 5; /* Make sure this value is higher than the .form class  */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
